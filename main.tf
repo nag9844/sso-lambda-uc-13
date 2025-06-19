@@ -1,7 +1,3 @@
-# Configure the AWS provider
-provider "aws" {
-  region = var.aws_region
-}
 
 # Data sources to get current account ID and region
 data "aws_caller_identity" "current" {}
