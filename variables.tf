@@ -32,3 +32,9 @@ variable "common_tags" {
     ManagedBy   = "Terraform"
   }
 }
+
+variable "resource_path_part" {
+  description = "The path part for the API Gateway resource (e.g., 'hello')."
+  type        = string
+  default     = "hello" # Match what you set in the api_gateway module call
+}
