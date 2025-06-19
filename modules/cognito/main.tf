@@ -41,5 +41,5 @@ resource "aws_cognito_user_pool_client" "main" {
 
   prevent_user_existence_errors = "ENABLED" # Good security practice
 
-  tags = var.tags
+  # tags = var.tags
 }
