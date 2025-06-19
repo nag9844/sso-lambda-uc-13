@@ -22,7 +22,7 @@ module "lambda" {
   environment_variables = {
     USER_POOL_ID   = "" # Placeholder, will be updated by a later apply
     CLIENT_ID      = "" # Placeholder, will be updated by a later apply
-    AWS_REGION     = data.aws_region.current.name
+    # AWS_REGION     = data.aws_region.current.name
   }
   tags = var.common_tags
 }
