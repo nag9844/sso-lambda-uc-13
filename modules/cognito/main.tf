@@ -39,8 +39,8 @@ resource "aws_cognito_user_pool_client" "main" {
   # If you were building a mobile app or a secure backend, you might want it.
   generate_secret = false
 
-  tags = {
-    Project     = var.project_name
-    Environment = var.environment
-  }
+  # tags = {
+  #   Project     = var.project_name
+  #   Environment = var.environment
+  # }
 }
