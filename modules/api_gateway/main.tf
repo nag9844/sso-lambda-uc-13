@@ -33,6 +33,8 @@ resource "aws_api_gateway_integration" "hello_world_integration" {
   uri                     = "arn:aws:apigateway:${data.aws_region.current.name}:lambda:path/2015-03-31/functions/${var.lambda_function_arn}/invocations"
 }
 
+data "aws_region" "current" {}
+
 resource "aws_lambda_permission" "allow_api_gateway" {
   statement_id  = "AllowAPIGatewayInvokeLambda"
   action        = "lambda:InvokeFunction"
