@@ -30,7 +30,7 @@ resource "aws_api_gateway_integration" "hello_world_integration" {
   http_method             = aws_api_gateway_method.hello_world_method.http_method
   type                    = "AWS_PROXY" # Lambda Proxy Integration
   integration_http_method = "POST"      # Lambda integrations use POST
-  uri                     = var.lambda_function_arn
+  uri                     = "arn:aws:apigateway:${data.aws_region.current.name}:lambda:path/2015-03-31/functions/${var.lambda_function_arn}/invocations"
 }
 
 resource "aws_lambda_permission" "allow_api_gateway" {
