@@ -7,9 +7,7 @@
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.100.0 |
+No providers.
 
 ## Modules
 
@@ -21,11 +19,7 @@
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [aws_cognito_user_pool_domain.main_domain](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cognito_user_pool_domain) | resource |
-| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
-| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
+No resources.
 
 ## Inputs
 
@@ -42,8 +36,6 @@
 
 | Name | Description |
 |------|-------------|
-| <a name="output_api_gateway_invoke_url"></a> [api\_gateway\_invoke\_url](#output\_api\_gateway\_invoke\_url) | API Gateway Invoke URL for the authenticated 'Hello World' page. |
-| <a name="output_cognito_hosted_ui_domain"></a> [cognito\_hosted\_ui\_domain](#output\_cognito\_hosted\_ui\_domain) | The URL for your Cognito Hosted UI. |
-| <a name="output_cognito_user_pool_client_id"></a> [cognito\_user\_pool\_client\_id](#output\_cognito\_user\_pool\_client\_id) | Cognito User Pool App Client ID |
-| <a name="output_cognito_user_pool_id"></a> [cognito\_user\_pool\_id](#output\_cognito\_user\_pool\_id) | Cognito User Pool ID |
-| <a name="output_lambda_function_name"></a> [lambda\_function\_name](#output\_lambda\_function\_name) | Lambda Function Name |
+| <a name="output_api_gateway_url"></a> [api\_gateway\_url](#output\_api\_gateway\_url) | The URL of the API Gateway endpoint. |
+| <a name="output_cognito_user_pool_client_id"></a> [cognito\_user\_pool\_client\_id](#output\_cognito\_user\_pool\_client\_id) | The ID of the Cognito User Pool Client. |
+| <a name="output_cognito_user_pool_id"></a> [cognito\_user\_pool\_id](#output\_cognito\_user\_pool\_id) | The ID of the Cognito User Pool. |
